@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script defer src="./js/script.js"></script>    <title>Weather App</title>
 </head>
 <body>
-    <main>
+    <header>
         <h1>Weather App</h1>
-        <p id="title"></p>
-        <p id="city"></p>
-        <p id="temp"></p>
-        <p id="index"></p>
-        <p id="desc"></p>
+
+    </header>
+    <main>
+        <p id="city">Weather for: </p>
+        <p id="temp">Temperature: </p>
+        <p id="index">Feels like: </p>
+        <p id="desc">Weather: </p>
+        <img src="" alt="">
+        <form>
+            <input type="text" placeholder="City Name">
+            <input type="submit" value="Get Weather Info">
+        </form>
     </main>
-    <form>
-        <input type="text" placeholder="Search by City">
-        <input type="submit" value="Search">
-    </form>
+    
+    
+    <footer>
+        <p>&copy; 2020 All Rights Reserved</p>
+    </footer>
   
 
 </body>
