@@ -49,7 +49,6 @@ function render() {
     $desc.text('Weather: ' + weatherData.weather[0].description);
     $img.attr('src', `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`)
     $userInput.val('');
-    console.log('Weather data: ', weatherData)
 }
 
 init();
