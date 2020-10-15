@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+    <!-- CSS link -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Javascript links -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script defer src="./js/script.js"></script>    <title>Weather App</title>
 </head>
 <body>
     <header>
         <h1>Weather App</h1>
-
     </header>
     <main>
         <p id="city">Weather for: </p>
         <p id="temp">Temperature: </p>
         <p id="index">Feels like: </p>
         <p id="desc">Weather: </p>
-        <img src="" alt="">
-        <form>
-            <input type="text" placeholder="City Name">
-            <input type="submit" value="Get Weather Info">
-        </form>
     </main>
-    
-    
+    <section id="icon">
+        <img  src="" alt="">
+    </section>
+    <section>
+        <form id="info">
+            <input id="enter-city" type="text" placeholder="City Name">
+            <input id="get-weather" type="submit" value="Get Weather">
+        </form>
+    </section>
     <footer>
-        <p>&copy; 2020 All Rights Reserved</p>
+        <p>Copyright &copy; <span id="year"></span> All Rights Reserved</p>
     </footer>
-  
-
-</body>
+  </body>
 </html>

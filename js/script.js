@@ -7,6 +7,7 @@ let userInput, weatherData;
 
 
 // Cached element references
+
 const $city = $('#city');
 const $temp = $('#temp');
 const $index = $('#index');
@@ -14,14 +15,15 @@ const $desc = $('#desc');
 const $img = $('img');
 const $form = $('form');
 const $userInput = $('input[type="text"]');
+const $year = $('#year');
+
 
 
 // Event listeners
 $form.on('submit', handleGetData);
 
-// Functions
 
-// q={city name}&appid={API key}
+// Functions
 
 function handleGetData(event) {
     event.preventDefault();
@@ -36,6 +38,7 @@ function handleGetData(event) {
 
     }, function(error){
         console.log('Error: ', error);
+        
     });
 }
 
@@ -49,7 +52,9 @@ function render() {
     console.log('Weather data: ', weatherData)
 }
 
+init();
 
-/*
-Data:  */
-
+function init() {
+    year = new Date().getFullYear();
+    $year.text(year);
+  }
