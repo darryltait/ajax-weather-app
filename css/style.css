@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #17344F;
+
+    /* justify-content: center;
+    align-items: center; */
+
+
+}
+
+
+
+main {
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1;
+    font-size: 1.5em;
+    margin-left: 8%; 
+    line-height: 2em;
+    /* background-color: coral; */
+    padding-top: 15px;
+
+}
+
+header, footer {
+    display: flex;
+    background-color: #2EA4D0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FAF9F9;
+    height: 50px;
+    
+
+}
+header {
+    justify-content: flex-start;
+    align-items: center;
+    height: 75px;
+    font-size: 1.25em;
+}
+h1 {
+    margin-left: 8%;
+}
+
+#icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+img {
+    width: 250px;
+    margin: -10px auto;
+    /* background-color: green; */
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    
+    /* background-color: gray; */
+
+
+}
+#get-weather {
+    height: 2.25em;
+    width: 40%;
+    margin: 10px auto 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Barlow', sans-serif;
+    border: 1px solid #17344F;
+    color: #17344F;
+
+
+
+}
+
+#enter-city {
+    height: 1.75em;
+    width: 80%;
+    margin: 10px auto 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    border: 1px solid #17344F;
+    color: #17344F;
+
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 125px;
+        font-size: 2.25em;
+    }
+    main {
+        font-size: 2.5em; 
+        margin-bottom: -65px;     
+    }
+    footer {
+        height: 75px;
+        font-size: 1.25em;
+    }
+    #get-weather {
+        height: 3.5em;
+        width: 20%;
+        font-size: 1.25em;
+        margin-bottom: 30px;
+    }
+    #enter-city {
+        height: 3.5em;
+        width: 60%;
+        font-size: 1.25em;
+    }
+    img {
+        margin: 10px auto;
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        height: 100px;
+        font-size: 2em;
+    }
+    main {
+        font-size: 2em;
+    }
+}
